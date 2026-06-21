@@ -1,15 +1,5 @@
-# ecolizer
-Troubleshooting an Arduino LED circuit to identify why pins 8–11 were not lighting up and to ensure all LEDs work properly.
-In this project, we aim to troubleshoot and resolve issues with LEDs connected to an Arduino, specifically focusing on pins 8 through 11 which were reported as non-functional. The initial problem arose after modifying code to control ten LEDs, leading to the failure of those connected to the higher pin numbers. Through a process of elimination, including testing individual LED-Arduino pin pairings and verifying GND connections, we will systematically identify the root cause. This might involve checking for faulty components, incorrect wiring on the breadboard, or potential issues with the Arduino pins themselves. The ultimate goal is to achieve reliable operation of all ten LEDs by ensuring proper circuit integrity and code execution.
+Project Description
 
-For the GitHub repository, you could also add a section detailing the troubleshooting steps taken. For instance:
+This project is a simple sound-reactive LED equalizer built with an Arduino board, a microphone sensor, and multiple LEDs. The microphone continuously measures the surrounding sound level and sends the data to the Arduino for processing.
 
-**Troubleshooting Steps:**
-
-1.  **Code Verification:** Confirmed that the code correctly addresses pins 8-11 and uses appropriate `pinMode` and `digitalWrite` functions.
-2.  **Component Testing:** Each LED and its corresponding resistor were tested individually using a known working Arduino pin (e.g., pin 2) to rule out faulty components.
-3.  **Wiring Check:** Meticulously inspected all breadboard connections, paying close attention to the Ground (GND) rail continuity, especially across different sections of the breadboard.
-4.  **Pin-Specific Test:** A dedicated test sketch was uploaded to toggle each pin from 2 to 11 sequentially, allowing for direct observation of individual pin output.
-5.  **Breadboard Integrity:** Ensured that all components are securely seated in their respective breadboard rows and that the GND connections are robust and continuous.
-
-This detailed approach will help others understand the problem-solving process and the eventual solution.
+Based on the detected sound intensity, the Arduino turns on a corresponding number of LEDs. Low sound levels illuminate only a few LEDs, while louder sounds activate more LEDs, creating a visual representation of the audio level similar to an equalizer display.
